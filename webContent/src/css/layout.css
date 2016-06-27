@@ -1,0 +1,137 @@
+html, body {
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+.app-container {
+	height: 100%;
+	background-color: #14151A;
+	/*background-image: url('../images/tectile.png');*/
+	display: flex;
+	flex-direction: row;
+}
+
+.app-container > .left {
+	flex: 0 0 210px;
+	display: flex;
+	flex-direction: column;
+	/*background-color: darkturquoise;*/
+}
+
+.app-container > .left > .left-top {
+	flex: 0 0 100px;
+	/*background-color: darkgreen;*/
+}
+
+.app-container > .left > .left-center {
+	flex: 1 1 auto;
+	margin: 10px 0px 5px 5px;
+	background-color: rgba(98, 114, 113, 0.03);
+	border : 2px solid rgb(98, 114, 113);
+}
+
+.app-container > .center {
+	flex: 1 1 auto;
+	margin-left: 10px;
+	display: flex;
+	flex-direction: column;
+	/*background-color: deepskyblue;*/
+}
+
+.app-container > .center > .center-top {
+	flex: 0 0 2px; /*50*/
+	/*background-color: green;*/
+}
+
+.app-container > .center > .center-center {
+	flex: 1 1 auto;
+	margin-top: 10px;
+	display: flex;
+	flex-direction: row;
+	/*background-color: lime;*/
+}
+
+.app-container > .center > .center-center > .center-center-center {
+	flex: 1 1 auto;
+	margin-right: 10px;
+	display: flex;
+	flex-direction: column;
+	/*background-color: aqua;*/
+}
+
+.app-container > .center > .center-center > .center-center-center > .center-center-center-center {
+	flex: 1 1 auto;
+	/*margin-bottom: 5px;*/
+	/*background-color: lightseagreen;*/
+
+	display: flex;
+	flex-direction: column;
+}
+
+.app-container > .center > .center-center > .center-center-center > .center-center-center-bottom {
+	flex: 0 0 192px;
+	/*background-color: mediumturquoise;*/
+	background-color: rgba(98, 114, 113, 0.03);
+	border : 1px solid rgb(98, 114, 113);
+	border-radius: 4px 4px 0 0;
+	margin-bottom: 6px;
+}
+
+.app-container > .center > .center-center > .center-center-right {
+	flex: 0 0 200px;
+	background-color: dodgerblue;
+}
+.tab-container {
+	display: flex;
+	flex-direction: row;
+	border-top: 1px solid #ddd;
+}
+.tab-container > .left {
+	flex: 0 0 300px;
+	display: flex;
+	flex-direction: column;
+	padding: 15px;
+}
+.tab-container > .left-20 {
+	flex: 0 0 20%;
+	display: flex;
+	flex-direction: column;
+	padding: 15px;
+}
+.tab-container > .left-25 {
+	flex: 0 0 25%;
+	display: flex;
+	flex-direction: column;
+	padding: 15px;
+}
+.tab-container > .left-33 {
+	flex: 0 0 33%;
+	display: flex;
+	flex-direction: column;
+	padding: 15px;
+}
+.tab-container > .left-33 {
+	flex: 0 0 33%;
+	display: flex;
+	flex-direction: column;
+	padding: 15px;
+}
+.tab-container > .left-50 {
+	flex: 0 0 50%;
+	display: flex;
+	flex-direction: column;
+	padding: 15px;
+}
+.tab-container > .left-auto {
+	flex: 0 0 auto;
+	display: flex;
+	flex-direction: column;
+	padding: 15px;
+}
+.tab-container > .center {
+	flex: 1 1 auto;
+	margin-left: 20px;
+	display: flex;
+	flex-direction: column;
+}

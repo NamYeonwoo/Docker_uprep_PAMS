@@ -1,0 +1,28 @@
+<div ng-controller="TabController">
+    <a ng-click="refreshData()" class="pull-right refreshButton">
+        <em class="fa fa-refresh"> Refresh</em>
+    </a>
+    <div class="tab-container">
+        <div class="left-20">
+            <div class="m-b-2">
+                <label>Number of Peers</label>
+                <label class="control-right"> {{tabData.peerCount}}</label>
+            </div>
+            <div class="m-b-2">
+                <label>Number of Seeders</label>
+                <label class="control-right"> {{tabData.completedPeer}}</label>
+            </div>
+            <div class="m-b-2">
+                <label>Number of Leechers</label>
+                <label class="control-right"> {{tabData.startedPeer}}</label>
+            </div>
+            <div class="m-b-2">
+                <label>Number of Active Peers</label>
+                <label class="control-right"> {{tabData.activePeer}}</label>
+            </div>
+        </div>
+        <div class="center">
+            <nvd3 options="pieceChartOptions" data="pieceChartData" api="pieceChartApi"></nvd3>
+        </div>
+    </div>
+</div>

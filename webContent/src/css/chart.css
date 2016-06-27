@@ -1,0 +1,56 @@
+.chart-row {
+	flex: 1 1 100%;
+	margin-bottom: 10px;
+	
+	display: flex;
+	flex-direction: row;
+}
+
+.chart-row > traffic-chart {
+	flex: 1 1 100%;
+	display: flex;
+	flex-direction: column;
+	border : 1px solid rgb(98, 114, 113);
+	background-color: rgba(98, 114, 113, 0.05);
+}
+
+.chart-row > traffic-chart.margin {
+	margin-right: 10px;
+}
+
+.chart-row > traffic-chart > div {
+	flex: 1 1 100%;
+	display: flex;
+	flex-direction: column;
+	overflow-y: hidden;
+}
+
+.chart-row > traffic-chart .header {
+	flex: 0 0 25px; /* 21px*/
+	background-color: rgba(98, 114, 113, 0.3);
+	border-bottom : 1px solid rgb(98, 114, 113);
+}
+
+.chart-row > traffic-chart .body {
+	flex: 1 1 0px;
+	display: flex;
+	flex-direction: column;
+	padding-top: 5px;
+	padding-left: 2px;
+	margin-bottom: -34px;
+}
+
+.chart-row > traffic-chart .body > nvd3 {
+	flex: 0 1 0px;
+}
+
+.axis path {
+	fill: none;
+	stroke: #777;
+	shape-rendering: crispEdges;
+}
+
+.axis text {
+	font-family: Lato;
+	font-size: 13px;
+}

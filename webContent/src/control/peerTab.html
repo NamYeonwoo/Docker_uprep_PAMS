@@ -1,0 +1,39 @@
+<div ng-controller="TabController">
+    <a ng-click="refreshData()" class="pull-right refreshButton">
+        <em class="fa fa-refresh"> Refresh</em>
+    </a>
+    <div class="tab-container">
+        <div class="left-auto">
+            <div class="m-b-2">
+                <label>Overlay ID</label>
+                <label class="control-right m-l-100"> {{tabData.overlayId}}</label>
+            </div>
+            <div class="m-b-2">
+                <label>Peer ID</label>
+                <label class="control-right m-l-100"> {{tabData.peerId}}</label>
+            </div>
+            <div class="m-b-2">
+                <label>Number of PAM Report</label>
+                <label class="control-right m-l-100"> {{tabData.reportCount}}</label>
+            </div>
+            <div class="m-b-2">
+                <label>Max Active Peer</label>
+                <label class="control-right m-l-100"> {{tabData.maxNumConnForUp}}</label>
+            </div>
+        </div>
+        <div class="left-auto m-l-30">
+            <div class="m-b-2">
+                <label>Amount of Upload / Download(F`kn MB)</label>
+                <label class="control-right m-l-100"> {{tabData.uploaded}}  /  {{tabData.downloaded}}</label>
+            </div>
+            <div class="m-b-2">
+                <label>Average Speed Upload / Download</label>
+                <label class="control-right m-l-100"> {{tabData.totalUploadSpeed}}  /  {{tabData.totalDownloadSpeed}}</label>
+            </div>
+            <div class="m-b-2">
+                <label>NNumber of Connection Upload / Download</label>
+                <label class="control-right m-l-100"> {{tabData.numUploadConnection}}  /  {{tabData.numDownloadConnection}}</label>
+            </div>
+        </div>
+    </div>
+</div>
